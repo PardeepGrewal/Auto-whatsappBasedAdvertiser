@@ -94,8 +94,11 @@ def join_images():
     date = str(current_date.day) + '-' + str(current_date.month) + '-' + str(current_date.year)
     #Read the two images
     # ===================================== TEST
+    # if user wants to make images in prior than uncomment the line below and comment next line to the line below.
+    # in such a case we have to make folder with the name of the particular date in which we want to send it to the customer(like ./template_with_date/25-08-2021/image.jpg) and save the "image.jpg" in the date named folder.
+    # otherwise simply paste "image.jpg" in the "template_with_date" folder.
     #image1 = Image.open('./template_with_date/{}/image.jpg'.format(date))
-    image1 = Image.open('./template_with_date/image.jpg'.format(date))
+    image1 = Image.open('./template_with_date/image.jpg')
     #image1.show()
     for client_name in client_list:
         image2 = Image.open('./client_images/{}.jpg'.format(client_name))
@@ -134,39 +137,3 @@ def main_method():
     f = input("Task completed... PRESS ANY KEY AND THEN RETURN TO CLOSE... ")
 
 main_method()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
