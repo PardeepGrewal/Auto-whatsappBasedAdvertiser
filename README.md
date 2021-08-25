@@ -10,3 +10,16 @@ What user have to do for using Software: User have to prepare a single image rel
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 We need PIL, Chrome Driver, a blank template, client customized template and imag eof the day(Holi, Diwali, Chritmas etc)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+About the Folder and Files:
+We need three folders and an image file.
+Folder:
+1. clients_images
+2. template_with_date
+3. output_not_sent
+Discription of each folder is written in read_me file inside those folders.
+
+File:
+An image file with name "contact_image.jpg" which will act as a canvas for other two images which will be placed on one image.
