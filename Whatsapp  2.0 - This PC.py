@@ -69,8 +69,10 @@ def sending_whatsapp():
             driver.find_element_by_xpath('/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div[1]/div[2]/div/span/div/div/ul/li[1]/button/input').send_keys(path)
             #                             /html/body/div/div/div/div/div/footer/div/div/div/div/span/div/div/ul/li[3]/button/input[@type="file"]').send_keys(path)
             sleep(3)
-            # send File button click
-            driver.find_element_by_xpath('/html/body/div[1]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div').click()
+            # changed xpath on 17 aug 2021
+            driver.find_element_by_xpath('//div/div/div/div[@class="_165_h _2HL9j"]').click()
+            #                             /html/body/div/div[1]/div[1]/div[2]/div[2]/span/div[1]/span/div[1]/div/div[2]/div/div[2]/div[2]/div/div/span/svg/path
+            #                             /html/body/div[1]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div').click()
             sleep(2)
             print("Successfully Sent to ", client_name)
             success = success + 1
@@ -132,7 +134,7 @@ def main_method():
     f = input("Task completed... PRESS ANY KEY AND THEN RETURN TO CLOSE... ")
 
 main_method()
-# 9878199811 - Deepali Mam
+
 
 
 
